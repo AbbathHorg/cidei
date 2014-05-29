@@ -33,8 +33,12 @@ $(document).ready(function(){
 
 				if(age <18 || age > 99){
 					$('.error').show();
+<<<<<<< HEAD
 					//$('.error').text('Edad invalida debese sr mayor de 18 años o menor de 99');
 					$('.error').html("<strong>Edad invalida debese sr mayor de 18 años o menor de 99</strong>")
+=======
+					$('.error').text('Edad invalida debese sr mayor de 18 años o menor de 99');
+>>>>>>> 086c80fffc971a41246fa7828b9ec854d386a8a3
 					event.preventDefault();
 				}
 			}
