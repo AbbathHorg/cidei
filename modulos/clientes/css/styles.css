@@ -1,0 +1,28 @@
+table{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width:20%;
+	position: absolute;
+	top: 25%;
+	left: 25%
+}
+th, td{
+	border: 1px solid black;
+	height:20px;
+	padding:5px;
+	width: 30px;
+}
+th{
+	text-align: center;
+	background-color: #C0C0C0;
+}
+td{
+	vertical-align: bottom;
+}
+tr:nth-child(even) {
+    background-color: #e3ebf3;
+}
+#pagination{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+}

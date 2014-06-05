@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="../assets/jquery-1.11.1.min.js"></script>
+		<title>Crear Cliente</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<div>
+					<h3>Informacion Del Cliente</h3>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<span class="label">Id Cliente *</span><br>
+					<input type="text" name="idclient" class="idcliente" value="Id Cliente" readonly="readonly" />
+					<span class=""></span>
+				</div>
+
+				<div>
+					<span class="label">Tipo Documento</span><br>
+					<select id="selectdocu" class="seleccion-documento">
+						<option value="0">Seleccione un tipo de documento</option>
+						<option value="C.C.">C.C.</option>
+						<option value="NIT">NIT</option>
+					</select>
+				</div>
+
+				<div>
+					<span class="label">Documento *</span><br>
+					<input type="text" name="documento" class="cedula" value="Numero Cedula" />
+				</div>
+
+				<div>
+					<span class="label">1er Apellido *</span><br>
+					<input type="text" name="apellido1" class="primer-apellido" value="1er Apellido" />
+				</div>
+				
+				<div>
+					<span class="label">2do Apellido</span><br>
+					<input type="text" name="apellido2" class="segundo-apellido" value="2do Apellido" />
+				</div>
+
+				<div>
+					<span class="label">Nombres *</span><br>
+					<input type="text" name="idnombres" class="nombres" value="Numero Cedula" />
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<h3>Informacion Empresa</h3>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<span class="label">Tipo Cliente</span>
+					<select id="selectclient" class="seleccion-cliente">
+						<option value="0">Seleccione el tipo de cliente</option>
+						<option value="Persona Natural">Persona Natural</option>
+						<option value="Persona Juridica">Persona Juridica</option>
+					</select>
+				</div>
+
+				<div>
+					<span class="label">Razon Social</span>
+					<input type="text" name="social" class="razon-social" value="Razon Social" />
+				</div>
+
+				<div>
+					<span class="label">Direccion</span>
+					<input type="text" name="address" class="direccion" size="30" value="Direccion, Ciudad, Cod Postal" />
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<h3>Informacion De Contacto</h3>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<span class="label">Numero De Telefono</span>
+					<input type="text" name="tel" class="telefono" value="Numero de Telefono" />
+				</div>
+
+				<div>
+					<span class="label">Numero De Celular</span>
+					<input type="text" name="celu" class="celular" value="Numero de Celular" />
+				</div>
+
+				<div>
+					<span class="label">Direccion De Email</span>
+					<input type="text" name="correo" class="email" value="Direccion De Email" />
+				</div>
+
+				<div>
+					<span class="label">Numero De Contacto</span>
+					<input type="text" name="contact" class="contacto" value="Numero De Contacto" />
+				</div>
+
+				<div>
+					<button class="create-button" href="#">CREAR CLIENTE</button>
+					<button class="cancel-button" href="#">CANCELAR</button>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
