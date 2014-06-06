@@ -1,0 +1,16 @@
+body {
+  background: #575757;
+  font-color: #333333;
+  width: 960px; }
+  body h1 {
+    font-color: red; }
+  body span {
+    background-color: green; }
+    body span a {
+      font-size: 20px; }
+  body h2 {
+    font-family: Arial; }
+  body .nuevocolor1 {
+    color: darkred; }
+  body .nuevocolor2 {
+    color: cyan; }

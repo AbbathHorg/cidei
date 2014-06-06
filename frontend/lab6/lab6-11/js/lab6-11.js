@@ -23,29 +23,58 @@ $(document).ready(function(){
 	$('.conf-password').focus(function(){
 		$(this).addClass('inputs');
 	});
-	$('nid-error').addClass('error');
-	$('nid-error').hide();
 
-	$('user-error').addClass('error');
-	$('user-error').hide();
+	/* Mensajes de error */
 
-	$('password-error').addClass('error');
-	$('password-error').hide();
+	$('.nid-error').addClass('error');
+	$('.nid-error').hide();
 
-	$('conf-password-error').addClass('error');
-	$('conf-password-error').hide();
+	$('.user-error').addClass('error');
+	$('.user-error').hide();
 
-	$('email-error').addClass('error');
-	$('email-error').hide();
+	$('.password-error').addClass('error');
+	$('.password-error').hide();
 
-	$('food-error').addClass('error');
-	$('food-error').hide();
+	$('.conf-password-error').addClass('error');
+	$('.conf-password-error').hide();
 
-	$('pay-error').addClass('error');
-	$('pay-error').hide();
+	$('.email-error').addClass('error');
+	$('.email-error').hide();
 
-	$('city-error').addClass('error');
-	$('city-error').hide();
+	$('.food-error').addClass('error');
+	$('.food-error').hide();
+
+	$('.pay-error').addClass('error');
+	$('.pay-error').hide();
+
+	$('.city-error').addClass('error');
+	$('.city-error').hide();
+
+	/* Mensajes de resultado */
+
+	$('.nid-success').addClass('success');
+	$('.nid-success').hide();
+
+	$('.user-success').addClass('success');
+	$('.user-success').hide();
+
+	$('.password-success').addClass('success');
+	$('.password-success').hide();
+
+	$('.conf-password-success').addClass('success');
+	$('.conf-password-success').hide();
+
+	$('.email-success').addClass('success');
+	$('.email-success').hide();
+
+	$('.food-success').addClass('success');
+	$('.food-success').hide();
+
+	$('.pay-success').addClass('success');
+	$('.pay-success').hide();
+
+	$('.city-success').addClass('success');
+	$('.city-success').hide();
 
 	$('#buttons #info').remove();
 
@@ -57,9 +86,14 @@ $(document).ready(function(){
 		if(validate.userid(data)){
 			$('#nid').next().hide();			
 			$('.nid-error').next().hide();
+			$('input#nid').removeClass('error');
+			$('input#nid').addClass('success');
+			$('.nid-success').show();
+			$('.nid-success').text('El documento de identidad es correcto');
 			localStorage.setItem('nid', data);
 		}
 		else{
+			$('.nid-success').next().hide();
 			$('input#nid').addClass('error');
 			$('.nid-error').next().show();
 			$('.nid-error').text('Indique su documento de Identidad');
@@ -84,9 +118,9 @@ $(document).ready(function(){
 
 		var len = data.length;
 
-		if(len < 1 && data !== ""){
+		if(len < 1 && data === ""){
 			$('.password').next().show();
-			$('.password-error').next().show();
+			$('.password-error').show();
 			$('.password-error').text('Ingrese una contraseña');		
 		}
 		else{
@@ -99,7 +133,7 @@ $(document).ready(function(){
 
 		var len = data.length;
 
-		if(len < 1 && data !== ""){
+		if(len < 1 && data === ""){
 			$('.conf-password').next().show();
 			$('.conf-password-error').next().show();
 			$('.conf-password-error').text('Confirme la contraseña');		
@@ -146,8 +180,7 @@ $(document).ready(function(){
 			$('.food-error').text('¡Debes seleccionar un alimento!');
 		}
 		else{
-			$('.food-error').hide();			
-			$('.food-error').show();
+			$('.food-error').hide();
 			$('.food-total').text('El total de la compra: $' + count + 'M/Cte');
 
 			localStorage.setItem('total', count);
@@ -192,7 +225,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('click', '#info', function(){
-		$('openModal > div').append(
+		$('#openModal > div').append(
 			'<h2>Detalle del Pedido</h2>' +
 			'<ul>' +
 			'<li> Su Documento de Identidad es: ' + localStorage.getItem('nid') + '</li>' +
@@ -206,7 +239,7 @@ $(document).ready(function(){
 		var meals = JSON.parse(localStorage.getItem('meals'));
 
 		$.each(meals, function(key, value){
-			$('#listMeals > ul').append('<li>El producto' + key + 'cuesta $' + value + 'M/Cte</li>');
+			$('#listMeals > ul').append('<li>El producto ' + key + ' cuesta $' + value + ' M/Cte</li>');
 		});
 	});
 });
