@@ -9,6 +9,10 @@ $(document).ready(function(){
 		userid : function(uid){
 			var pattern = new RegExp(/^[0-9]+$/);
 			return pattern.test(uid);
+		},
+		lastname1 : function(){
+			var pattern = new RegExp(/^[0-9]+$/);
+			return pattern.test(uid);
 		}
 	}
 	$('#nid').focus(function(){

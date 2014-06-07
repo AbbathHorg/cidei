@@ -1,0 +1,34 @@
+@mixin border_mix(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin box_shadow($up : 0, $right : 1px, $down 3px, $left 0){
+	-webkit-box-shadow: $up $right $down $left rgba(0,0,0,0.3);
+	-moz-box-shadow: $up $right $down $left rgba(0,0,0,0.3);
+	box-shadow: $up $right $down $left rgba(0,0,0,0.3);
+}
+
+@mixin border_mix($roundOne: 2px, $roundTwo: 4px){
+	-webkit-border-radius : $roundOne $roundTwo;
+	-khtml-border-radius : $roundOne $roundTwo;
+	-moz-border-radius : $roundOne $roundTwo;
+	-o-border-radius : $roundOne $roundTwo;
+	border-radius : $roundOne $roundTwo;
+}
+
+@mixin transform(){
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
