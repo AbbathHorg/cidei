@@ -35,8 +35,17 @@ input[type=submit]{
 	width: 200px;
 }
 
-.error{
+.user-error{
 	color: red;
 	padding-left: 10px;
 }
 
+.password-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.password-conf-error{
+	color: red;
+	padding-left: 10px;
+}

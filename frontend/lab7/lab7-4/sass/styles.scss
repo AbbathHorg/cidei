@@ -1,56 +1,124 @@
 @import "_reset";
 @import "_variables";
-@import "_border_mixin";
+@import "_border_mixin2";
 
-body{
-	background : $color_white;
-	font-color : $color_font;
-	width : $page_width;
 
-	.color{
-
-		h1{
-		//saturar el color; funcion especifica de Sass
-		color: saturate($color_font, 25%);
-		font-size: $font_size_h1;
-		}
-
-		h2{
-			//funcion de escalar un color a grises de Sass
-			color: grayscale($color_red);
-			font-size: $font_size_h2;
-		}
-
-		h3{
-			//Variacion de la funcion escalar a grises de Sass
-			color: desaturate($color_green, 100%);
-			font-size: $font_size_h3;
-		}
-
-		h4{
-			//Funcion mix, para mezclar dos colores, en este caso una escala a grises de la variable $color_green con $color_red
-			color: mix(desaturate($color_green, 100%), $color_red);
-			font-size: $font_size_h4;
-		}
-
-		h5{
-			//Mezcla de colores de manera normal entre $color_white y #333
-			color: mix($color_white, #333);
-			font-size: $font_size_h5;
-		}
-
-		h6{
-			//Iluminacion del color #555 al 63%
-			color: lighten(#555, 63%);
-			font-size: $font_size_h6;
-		}
-	}
-
-	header{
+	* {
 		@include border_mix();
 	}
 
-	#container{
-		@include border_mix(3px, 4px);
+	h1, h2, h3, h4, h5, h6 {
+		color: $color_three;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
 	}
-}
+
+	/* Header */
+
+	.header{
+		background-color: $color_one;
+		border-bottom: 14px;
+		@include box_shadow();		
+	}
+
+	.logo{
+		background-color: $color_four;
+		@include border_radius();
+		margin: 0 auto;
+		padding: 5px 0;
+		text-align: center;
+		width: 250px;
+	}
+
+	.logo h1{
+		color: $color_two;
+		font-weight: normal;
+		font-family: Arial, sans-serif;
+		margin-bottom: 0;
+	}
+
+	/* Navigation */
+
+	.nav-menu,
+	.portfolio > figure.columns{
+		display: none;	
+	}
+
+	label{
+		color: $color_one;
+		cursor: pointer;
+		display: inline-block;
+		padding: 5px;
+	}
+
+	nav-menu:checked + label{
+		color: $color_two;
+		background-color: $color_one;
+		@include border_radius();		
+	}
+
+	#all:checked ~ .portfolio .all,
+	#develop:checked ~ .portfolio .poster,
+	#test:checked ~ .portfolio .illustration,
+	#languages:checked ~ .portfolio .typography,
+	#skills:checked ~ .portfolio .package{
+		display: block;
+	}
+
+	/* Portfolio */
+
+	.portfolio{
+		margin-top: 20px;	
+	}
+
+	.portfolio .four.columns{
+		margin-left: 0;
+		margin-right: 0;
+		width: 240px;
+	}
+
+	.portfolio > figure{
+		position: relative;
+		overflow: hidden;
+	}
+
+	.portfolio > figure img{
+		display: block;
+		max-width: 100%;
+	}
+
+	.portfolio figcaption{
+		position: absolute;
+		height: 100%;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background-color: rgba(58, 63, 67, 0.8);
+		padding: 10%;
+
+		@include transform();
+		
+		@include transition();
+		
+	}
+
+	.portfolio figcaption h4{
+		color: $color_two;
+	}
+
+	.portfolio figcaption p{
+		color: $color_two;
+		font-size: 0.9em;
+	}
+
+	.portfolio > figure:hover figcaption{
+		@include transform();		
+	}
+
+	/* Footer section */
+
+	.footer{
+		border-top: 1px solid #ccc;
+		margin-top: 28px;
+		padding: 28px 0;
+	}

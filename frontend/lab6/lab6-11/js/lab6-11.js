@@ -214,6 +214,8 @@ $(document).ready(function(){
 			$('.city-error').hide();
 			localStorage.setItem('city', count);
 
+			$('#info').remove();
+
 			$('#buttons').append(
 				'<a id="info" href="#openModal">Ver Detalle del Pedido</a>'
 			);
@@ -241,5 +243,6 @@ $(document).ready(function(){
 		$.each(meals, function(key, value){
 			$('#listMeals > ul').append('<li>El producto ' + key + ' cuesta $' + value + ' M/Cte</li>');
 		});
+		$('#openModal').empty();
 	});
 });

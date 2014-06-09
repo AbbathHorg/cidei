@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	$('.error').hide();
+	$('.user-error').hide();
+	$('.password-error').hide();
+	$('.password-conf-error').hide();
 	$('.submit').click(function(event){
 		$('.userid').blur(function(){
 			var data = $('.userid').val();
@@ -8,7 +10,7 @@ $(document).ready(function(){
 			if(len < 1){
 				$('.userid').next().show();
 				$('.password').attr('disabled', true);
-				$('.confpass').attr('disabled', true);
+				$('.confpass').attr('disabled', true);				
 			}
 			else{
 				$('.userid').next().hide();

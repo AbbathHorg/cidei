@@ -35,8 +35,72 @@ input[type=submit]{
 	width: 200px;
 }
 
-.error{
+.email-error{
 	color: red;
 	padding-left: 10px;
 }
 
+.name-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.password-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.password-conf-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.valid-password-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.meal-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.pay-mode-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.city-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.length-error{
+	color: red;
+	padding-left: 10px;
+}
+
+.name-result{
+	color: green;
+	padding-left: 10px;
+}
+
+.email-result{
+	color: green;
+	padding-left: 10px;
+}
+
+.meal-result{
+	color: green;
+	padding-left: 10px;
+}
+
+.pay-mode-result{
+	color: green;
+	padding-left: 10px;
+}
+
+.city-result{
+	color: green;
+	padding-left: 10px;
+}
