@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="stylesheets/style.css" />
+		<script type="text/javascript" src="javascripts/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="javascripts/lab8-5.js"></script>
+	</head>
+	<body>
+		<h1>{{name}}</h1>
+		<form action="/ok" method="POST">
+			<fieldset>
+				<legend>Informacion General</legend>
+				<fieldset>
+					<div>
+						<span class"label">Documento de identidad</span>
+						<input type="text" id="nid" name="nid"/>
+						<span class="nid-error"></span>
+						<span class="nid-success"></span>
+
+						<span class"label">Nombres y apellidos</span>
+						<input type="text" id="username" name="username"/>
+						<span class="user-error"></span>
+						<span class="user-success"></span>
+					</div>				
+				</fieldset>
+				<fieldset>
+					<div id="user">
+						<span class"label">Password</span>
+						<input type="password" name="password" class="password" />
+						<span class="password-error"></span>
+						<span class="password-success"></span>
+					</div>
+
+					<div>
+						<span class"label">Confirmar password</span>
+						<input type="password" name="conf-password" class="conf-password" />
+						<span class="conf-password-error"></span>
+						<span class="conf-password-success"></span>
+					</div>
+
+					<div>
+						<span class"label">email</span>
+						<input type="text" name="emailid" class="emailadd" />
+						<span class="email-error"></span>
+						<span class="email-success"></span>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div id="checkboxes">
+						<span class="label">Seleccionar Alimentos</span><br>
+						<input type="checkbox"  id="pizza" name="pizza" value=5000  class="chkb">Pizza $5000 <br>
+						<input type="checkbox"  id="hotdog" name="hotdog" value=3000  class="chkb">HotDog $3000<br>
+						<input type="checkbox"  id="coke" name="coke" value=2000  class="chkb">Coca-Cola $2000<br>
+						<input type="checkbox"  id="fries" name="fries" value=3000  class="chkb">Papas Fritas $3000<br />
+						<span class="food-error"></span>
+						<span class="food-success"></span>
+						<br />
+						<span class="food-total"></span>
+						<br />
+					</div>
+				</fieldset>
+				<fieldset>
+					<div id="radios">
+						<span class="label">Modo de Pago</span><br>
+						<input type="radio"  name="paymode" class="radiobtn" value="Master Card">Master Card <br />
+						<input type="radio"  name="paymode" class="radiobtn" value="Visa Card">Visa Card<br />
+						<span class="pay-error"></span>
+						<span class="pay-success"></span>
+					</div>
+				</fieldset>	
+				<fieldset>
+					<div>
+						<span class="label">Ciudad</span>
+						<select id="city" class="infobox">
+							<option value="0">Seleccione una ciudad</option>
+							<option value="Barranquilla">Barranquilla</option>
+							<option value="Bogota">Bogotá</option>
+							<option value="Calí">Calí</option>
+							<option value="Cartagena">Cartagena</option>
+							<option value="Medellin">Medellin</option>
+						</select><br />
+						<span class="city-error"></span>
+						<span class="city-success"></span>
+					</div>
+				</fieldset>
+				<div id="buttons">
+					<input type="submit" class="button" value="Enviar" />
+				</div>
+			</fieldset>
+		</form> 
+
+		<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+			</div>
+		</div>
+	</body>
+</html>
