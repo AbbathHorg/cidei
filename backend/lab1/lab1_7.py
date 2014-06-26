@@ -7,11 +7,11 @@ Generador de sentencias aleatoreas con palabras
 
 import random
 
-articles = ("Un", "El", "Ella", "Nosotros", "Yo")
+articles = ("Un", "El", "Ella", "Nosotros", "Yo",)
 
-nouns = ("Mujer", "Hombre", "Carro", "Moto", "Perro", "Avion")
+nouns = ("Mujer", "Hombre", "Carro", "Moto", "Perro", "Avion",)
 
-verbs = ("Gustar", "Hablar", "Comer", "Decir")
+verbs = ("Gustar", "Hablar", "Comer", "Decir",)
 
 preposition = ("con", "por",)
 

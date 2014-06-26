@@ -7,7 +7,12 @@ Resolucion ecuacion cuadratica
 import math
 
 def result1(**kwargs):
-	operacion1 = (- b + raiz(**kwargs)) / 2 * a
+	a = kwargs[a];
+	b = kwargs[b];
+	c = kwargs[c];
+
+
+	operacion1 = (- b + raiz(a, b, c)) / 2 * a
 	return operacion1
 
 def raiz(**kwargs):
