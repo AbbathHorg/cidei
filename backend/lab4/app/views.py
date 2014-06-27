@@ -1,5 +1,5 @@
-from django.shortcuts import render_to_response, get_object_or_404
-from django.template import Context
+from django.shortcuts import render_to_response, get_object_or_404, HttpResponseRedirect
+from django.template import Context, RequestContext
 from app.models import Category, Item
 from app.forms import ItemForm
 
@@ -46,4 +46,4 @@ def add_item(request):
 		form = ItemForm()
 
 	context = Context({'title' : 'Adicionar item', 'form' : form})
-	return render_to_response('form.html', context)
+	return render_to_response('form.html', context, context_instance=RequestContext(request))
