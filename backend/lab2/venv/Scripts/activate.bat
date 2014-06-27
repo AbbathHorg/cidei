@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=c:\Program Files\ms4w\apache\htdocs\cidei\backend\lab2\venv"
+set "VIRTUAL_ENV=f:\Repositorio\MovilesBACKUP\Evolucion Dental\Codificacion\cidei\backend\lab2\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
