@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+	</head>
+	<body>
+		<h1>{{ title }}</h1>
+		<ul>
+			{% for catego in categories %}
+				<a href="{{ catego.slug }}">{{ catego.name }}</a>
+			{% endfor %}
+		</ul>
+	</body>
+</html>

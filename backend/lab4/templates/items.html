@@ -5,8 +5,10 @@
 	</head>
 	<body>
 		<h1>{{ title }}</h1>
-		<a href="/items">ITEMS</a>
-		<a href="/categories">CATEGORIES</a>
-		<a href="items/add/">Adicinar item</a>
+		<ul>
+			{% for item in items %}
+				<a href="{{ item.id }}">{{ item.name }}</a>
+			{% endfor %}
+		</ul>
 	</body>
 </html>

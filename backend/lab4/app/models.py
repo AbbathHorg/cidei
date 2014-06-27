@@ -6,7 +6,6 @@ L_TYPES = (
 	('p', 'No resuelto'),
 	)
 
-# Create your models here.
 class Category(models.Model):
 	name = models.CharField(max_length=255)
 	slug = models.SlugField(max_length=255, unique=True)
@@ -25,4 +24,7 @@ class Item(models.Model):
 
 	def __unicode__(self):
 		return "%s / %s" % (self.name, self.category)
-# Create your models here.
+
+class Pictures(models.Model):
+	item = models.ForeignKey(Item)
+	url = models.CharField(max_length=225)

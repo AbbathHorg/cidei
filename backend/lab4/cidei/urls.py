@@ -8,7 +8,10 @@ urlpatterns = patterns('',
     # url(r'^$', 'cidei.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'app.views.index', name='index'),
-    url(r'^(?P<cate_id>\d+)/$', 'app.views.details', name='details-cate'),
+     url(r'^$', 'app.views.index'),
+     url(r'^items/$', 'app.views.items'),
+     url(r'^categories/$', 'app.views.categories'),
+     url(r'^categories/(?P<slug>[\w-]+)/$', 'app.views.category_details'),
+     url(r'^items/(?P<item_id>\d+)/$', 'app.views.item_details'),
+     url(r'^items/add/$', 'app.views.add_item', name="add-items"),
 )
