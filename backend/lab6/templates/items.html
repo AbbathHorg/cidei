@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+	</head>
+	<body>
+		<h1>{{ title }}</h1>
+		<ul>
+			{% for item in items %}
+				<a href="{% url 'item-details' item.id %}">{{ item.name }}</a>
+			{% endfor %}			
+		</ul>
+		<a href="{% url 'index' %}">Volver a inicio</a>
+	</body>
+</html>
