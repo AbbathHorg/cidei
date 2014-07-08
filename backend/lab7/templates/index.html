@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+		<script src="{% static "js/jquery.cookie.js" %}"></script>
+		<script src="{% static "js/lab6.js" %}"></script>
+	</head>
+	<body>
+		<h1>{{ title }}</h1>
+		<a href="{% url 'items' %}">ITEMS</a>
+		<a href="{% url 'categories' %}">CATEGORIES</a>
+		<a href="{% url 'add-category' %}">Adicionar categoria</a>
+		<a href="{% url 'add-items' %}">Adicionar item</a>
+	</body>
+</html>

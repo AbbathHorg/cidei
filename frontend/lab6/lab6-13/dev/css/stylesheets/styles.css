@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../sass/styles.scss */
+form {
+  width: 300px;
+  margin: 20px auto;
+}
+
+/* line 10, ../sass/styles.scss */
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  width: 300px;
+  min-height: 30px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  outline: none;
+}
+
+/* line 23, ../sass/styles.scss */
+input[type=submit] {
+  background: none;
+  padding: 10px;
+}
+
+/* line 28, ../sass/styles.scss */
+.label {
+  float: left;
+  width: 120px;
+}
+
+/* line 33, ../sass/styles.scss */
+.infobox {
+  width: 200px;
+}
+
+/* line 37, ../sass/styles.scss */
+.email-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 42, ../sass/styles.scss */
+.name-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 47, ../sass/styles.scss */
+.password-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 52, ../sass/styles.scss */
+.password-conf-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 57, ../sass/styles.scss */
+.valid-password-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 62, ../sass/styles.scss */
+.meal-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 67, ../sass/styles.scss */
+.pay-mode-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 72, ../sass/styles.scss */
+.city-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 77, ../sass/styles.scss */
+.length-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 82, ../sass/styles.scss */
+.name-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
+
+/* line 87, ../sass/styles.scss */
+.email-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
+
+/* line 92, ../sass/styles.scss */
+.meal-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
+
+/* line 97, ../sass/styles.scss */
+.pay-mode-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
+
+/* line 102, ../sass/styles.scss */
+.city-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
