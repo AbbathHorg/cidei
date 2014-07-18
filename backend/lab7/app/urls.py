@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
-	 url(r'^$', 'app.views.index', name="index"),
+	url(r'^$', 'app.views.index', name="index"),
      url(r'^items/$', 'app.views.items', name="items"),
      url(r'^items/add/$', 'app.views.add_item', name="add-items"),
      url(r'^items/(?P<item_id>\d+)/$', 'app.views.item_details', name="item-details"),

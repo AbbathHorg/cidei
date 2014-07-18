@@ -8,10 +8,16 @@
 		<script src="{% static "js/lab6.js" %}"></script>
 	</head>
 	<body>
-		<h1>{{ title }}</h1>
-		<a href="{% url 'items' %}">ITEMS</a>
-		<a href="{% url 'categories' %}">CATEGORIES</a>
-		<a href="{% url 'add-category' %}">Adicionar categoria</a>
-		<a href="{% url 'add-items' %}">Adicionar item</a>
+		{% if user.is_authenticated %}
+			<a href="{% url 'logout' %}">Salir del sistema</a><br />
+			<h1>{{ title }}</h1>
+			<a href="{% url 'items' %}">ITEMS</a>
+			<a href="{% url 'categories' %}">CATEGORIES</a>
+			<a href="{% url 'add-category' %}">Adicionar categoria</a>
+			<a href="{% url 'add-items' %}">Adicionar item</a>
+		{% else %}
+			<a href="{% url 'register' %}">Registrarse</a>
+			<a href="{% url 'login' %}">Ingresar al sistema</a>
+		{% endif %}
 	</body>
 </html>

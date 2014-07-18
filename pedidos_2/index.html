@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="dev/css/stylesheets/styles.css" />
+		<script type="text/javascript" src="dist/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="dist/js/pedidos.js"></script>
+	</head>
+	<body>
+		<!-- Validando dos objetos -->
+		<form action="">
+			<fieldset>
+				<div>
+					<span class="label">Nombres y apellidos</span>
+					<input type="text" name="names" class="names" />
+					<span class="name-error"></span>
+					<span class="lenght-error"></span>
+					<span class="name-result"></span>
+				</div>
+				<div>
+					<span class="label">Correo Electronico</span>
+					<input type="text" name="email1" class="correo" />
+					<span class="email-error"></span>
+					<span class="email-result"></span>
+				</div>
+				<div>
+					<span class="label">Contraseña</span>
+					<input type="password" name="password" class="password" />
+					<span class="password-error"></span>
+				</div>
+				<div>
+					<span class="label">Repita contraseña</span>
+					<input type="password" name="confpass" class="confpass" />
+					<span class="password-conf-error"></span>
+					<span class="valid-password-error"></span>
+				</div>
+				<div>
+					<span class="label">Seleccion de comidas</span>
+					<input type="checkbox" id="pizza" name="pizza" value=5000 class="meal" />Pizza : 5000<br />
+					<input type="checkbox" id="hotDog" name="hotDog" value=3000 class="meal" />Hot Dog : 3000<br />
+					<input type="checkbox" id="coca-cola" name="coca-cola" value=2000 class="meal" />Coca-Cola : 2000<br />
+					<input type="checkbox" id="papasFritas" name="papasFritas" value=3000 class="meal" />Papas Fritas : 3000<br />
+					<span class="meal-error"></span>
+					<span class="meal-result"></span>
+				</div>
+				<div>
+					<span class="label">Medio de pago</span>
+					<input type="radio" name="master" class="paymode" value="MasterCard" />Master Card<br />
+					<input type="radio" name="anx" class="paymode" value="ANXCard" />ANX Card<br />
+					<input type="radio" name="visa" class="paymode" value="VisaCard" />Visa Card<br />					
+					<span class="pay-mode-error"></span>
+					<span class="pay-mode-result"></span>
+				</div>
+				<div>
+					<span class="label">Ciudad</span>
+					<select id="city" name="city" class="ciudad">
+						<option value="0">Seleccione algun item</option>
+						<option value="Bogota">Bogota</option>
+						<option value="Cali">Cali</option>
+						<option value="Medellin">Medellin</option>
+						<option value="Barranquilla">Barranquilla</option>
+					</select>			
+					<span class="city-error"></span>
+					<span class="city-result"></span>
+				</div>
+			</fieldset>					
+			<button class="button">Enviar</button>
+		</form>
+	</body>
+</html>

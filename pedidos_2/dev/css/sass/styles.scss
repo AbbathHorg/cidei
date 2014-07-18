@@ -1,0 +1,105 @@
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "_variables";
+
+form {
+	width: 300px;
+	margin: 20px auto;
+}
+
+input {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border: 1px solid #ccc;
+	font-size: 20px;
+	width: 300px;
+	min-height: 30px;
+	display: block;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	outline: none;
+
+}
+
+input[type=submit]{
+	background: none;
+	padding: $sangria;
+}
+
+.label{
+	float: left;
+	width: 120px;
+}
+
+.infobox{
+	width: 200px;
+}
+
+.email-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.name-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.password-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.password-conf-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.valid-password-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.meal-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.pay-mode-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.city-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.length-error{
+	color: $color_one;
+	padding-left: $sangria;
+}
+
+.name-result{
+	color: $color_two;
+	padding-left: $sangria;
+}
+
+.email-result{
+	color: $color_two;
+	padding-left: $sangria;
+}
+
+.meal-result{
+	color: $color_two;
+	padding-left: $sangria;
+}
+
+.pay-mode-result{
+	color: $color_two;
+	padding-left: $sangria;
+}
+
+.city-result{
+	color: $color_two;
+	padding-left: $sangria;
+}

@@ -1,0 +1,184 @@
+/* line 17, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/styles.scss */
+form {
+  width: 300px;
+  margin: 20px auto;
+}
+
+/* line 10, ../sass/styles.scss */
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  width: 300px;
+  min-height: 30px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  outline: none;
+}
+
+/* line 23, ../sass/styles.scss */
+input[type=submit] {
+  background: none;
+  padding: 10px;
+}
+
+/* line 28, ../sass/styles.scss */
+.label {
+  float: left;
+  width: 120px;
+}
+
+/* line 33, ../sass/styles.scss */
+.infobox {
+  width: 200px;
+}
+
+/* line 37, ../sass/styles.scss */
+.email-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 42, ../sass/styles.scss */
+.name-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 47, ../sass/styles.scss */
+.password-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 52, ../sass/styles.scss */
+.password-conf-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 57, ../sass/styles.scss */
+.valid-password-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 62, ../sass/styles.scss */
+.meal-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 67, ../sass/styles.scss */
+.pay-mode-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 72, ../sass/styles.scss */
+.city-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 77, ../sass/styles.scss */
+.length-error {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 82, ../sass/styles.scss */
+.name-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
+
+/* line 87, ../sass/styles.scss */
+.email-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
+
+/* line 92, ../sass/styles.scss */
+.meal-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
+
+/* line 97, ../sass/styles.scss */
+.pay-mode-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
+
+/* line 102, ../sass/styles.scss */
+.city-result {
+  color: darkgreen;
+  padding-left: 10px;
+}
